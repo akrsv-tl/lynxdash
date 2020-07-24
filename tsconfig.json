@@ -1,0 +1,11 @@
+{
+  "typeRoots": ["./node_modules/@types"],
+  "compilerOptions": {
+    "target": "ES5",
+    "sourceMap": true,
+    "noEmitOnError": true, // Не создавать итоговый файл, если во время компиляции произошла ошибка
+    "pretty": true, // Окрашивать в терминале сообщения об ошибке
+    "removeComments": true,
+  },
+  "include": ["src/**/*.ts"]
+}
