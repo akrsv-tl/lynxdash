@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * @param obj Значение, тип которого необходимо проверить
  * @description Улучшенная версия typeof
  * @returnType {string}
