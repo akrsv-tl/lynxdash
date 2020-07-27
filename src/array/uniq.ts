@@ -1,5 +1,5 @@
 import { get } from '../object/get';
-import { toType } from '../to-type';
+import { checkType } from '../check-type';
 
 /**
  *
@@ -13,7 +13,7 @@ export function uniq<T>(array: T[]): T[];
 export function uniq<O extends Record<string, any>>(array: O[], path: string): O[];
 export function uniq<T>(array, path?: string): T[] {
   return Object.values(array.reduce((acc, curr) => {
-    if (toType(curr) === 'object') {
+    if (checkType(curr) === 'object') {
       acc[get(path, curr)] = curr;
     } else {
       acc[curr] = curr;

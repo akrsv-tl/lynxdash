@@ -5,6 +5,6 @@
  * @returnType {string}
  */
 
-export function toType(obj) {
+export function checkType(obj) {
   return Object.prototype.toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
 }
