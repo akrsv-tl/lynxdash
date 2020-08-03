@@ -1,8 +1,8 @@
 /**
  * 
- * @param {array} array Массив, который будет переупорядочен
+ * @param {Array} array Массив, который будет переупорядочен
  * @description Функция переупорядочивает (перемешивает) массив случайным образом по алгоритму "Тасование Фишера-Йетса"
- * @returnType {array}
+ * @returnType {Array}
  */
 export function shuffle<T>(array: T[]): T[] {
   const newArray = [...array];

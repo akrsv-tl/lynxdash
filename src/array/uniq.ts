@@ -3,10 +3,10 @@ import { checkType } from '../check-type';
 
 /**
  *
- * @param {array} array Передаваемый массив
+ * @param {Array} array Передаваемый массив
  * @param {string} path Путь из ключей до значения, по которому определятся уникальность объекта. Необязательный параметр.
  * @description Функция возвращает массив уникальных значений
- * @returnType {array}
+ * @returnType {Array}
  */
 
 export function uniq<T>(array: T[]): T[];
